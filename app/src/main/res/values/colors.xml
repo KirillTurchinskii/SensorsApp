@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5E6BC0</color>
+    <color name="colorPrimaryDark">#2F3577</color>
+    <color name="colorAccent">#5E63C0</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="green_theme">#65DDB5</color>
+    <color name="light_green_theme">#68B576</color>
+    <color name="very_light_green_theme">#BACDBD</color>
+    <color name="dark_green_theme">#299186</color>
+    <color name="dark_pink_theme">#8B318B</color>
+    <color name="less_dark_pink_theme">#E03969</color>
+    <color name="dark_blueish_pink_theme">#6A3EB6</color>
+    <color name="blueish_pink_theme">#5E77C0</color>
+    <color name="dark_blue">#2F3049</color>
+    <color name="white_grey">#E2E2E2</color>
+    <color name="whiteW_grey">#FBFBFB</color>
+    <color name="white_w_grey">#F7F7F7</color>
+    <color name="white_w_grey_darker">#F3F3F3</color>
+    <color name="white_dark_grey">#E3E3E3</color>
+    <color name="seek_bar_background">#ababab</color>
+    <color name="lite_gray">#6C6C6C</color>
+    <color name="seek_bar_secondary_progress">#3399CC</color>
+</resources>

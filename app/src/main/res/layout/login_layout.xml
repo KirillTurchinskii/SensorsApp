@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center">
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log in"
+                android:textSize="26sp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorPrimary">
+        </TextView>
+
+        <TextView
+                android:id="@+id/connectionStatusLoginWindows"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="30dp"
+                android:text="Connection Status"
+                android:background="@drawable/rounded_edge"
+                android:gravity="center"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/dark_pink_theme"
+                android:textSize="18sp">
+        </TextView>
+
+            <EditText
+                    android:id="@+id/broker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:hint="Enter broker address"
+                    android:inputType="text"
+                    android:textSize="18sp">
+            </EditText>
+
+        <EditText
+                android:id="@+id/topicIncoming"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:hint="Enter Incoming Topic"
+                android:inputType="text"
+                android:textSize="18sp">
+        </EditText>
+
+        <EditText
+                android:id="@+id/topicOutgoing"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:hint="Enter Outgoing Topic"
+                android:inputType="text"
+                android:textSize="18sp">
+        </EditText>
+
+        <EditText
+                android:id="@+id/clientID"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:hint="Enter ID"
+                android:inputType="text"
+                android:textSize="18sp">
+        </EditText>
+
+        <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="5dp"
+                android:hint="Enter username"
+                android:inputType="textPersonName"
+                android:textSize="18sp"/>
+
+        <EditText
+                android:id="@+id/pass"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:inputType="textPassword"
+                android:hint="Enter password"
+                android:textSize="18sp">
+        </EditText>
+
+
+
+        <com.gor.mqtt.sensors.customviews.CustomButton
+                android:layout_width="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:minWidth="200dp"
+                android:onClick="connectBtn"
+                android:textColor="@color/colorPrimary"
+                android:text="Connect"
+                android:stateListAnimator="@null"
+                android:background="@drawable/rounded_edge"
+                >
+
+        </com.gor.mqtt.sensors.customviews.CustomButton>
+
+        <CheckBox
+                android:id="@+id/use_ssl_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:text="Use SSL" />
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
